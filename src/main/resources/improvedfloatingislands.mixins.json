@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "corgitaco.improvedfloatingislands.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "improvedfloatingislands.refmap.json",
+  "mixins": [
+    "MixinDimensionGeneratorSettings",
+    "access.BiomeGeneratorTypeScreenAccess",
+    "access.BiomeSourceAccess",
+    "access.DimensionSettingsAccess",
+    "access.OverWorldBiomeSourceAccess"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

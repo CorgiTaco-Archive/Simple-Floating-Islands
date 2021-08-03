@@ -3,17 +3,17 @@ loaderVersion = "[33,)"
 license = "LGPLv3"
 issueTrackerURL = ""
 [[mods]]
-modId = "modid"
+modId = "improvedfloatingislands"
 version = "1.0"
-displayName = "Mod ID"
+displayName = "Improved Floating Islands"
 displayURL = ""
 logoFile = "icon.png"
 credits = ""
 authors = "Corgi Taco"
 description = '''
-Description
+A mod that makes floating islands more configurable.
 '''
-[[dependencies.modid]]
+[[dependencies.improvedfloatingislands]]
 modId = "forge"
 mandatory = true
 versionRange = "[33.0.0,)"
