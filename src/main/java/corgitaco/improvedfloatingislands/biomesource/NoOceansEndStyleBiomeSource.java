@@ -77,14 +77,13 @@ public class NoOceansEndStyleBiomeSource extends BiomeProvider {
         this.noOceansLayer = NoOceanLayers.getNoOceansLayers(seed, false, biomeSize);
         this.seed = seed;
         this.biomeRegistry = biomeRegistry;
-        this.centerBiomeLocation = centerBiomeLocation;
         Biome randBiome = ((BiomeSourceAccess) this).getPossibleBiomes().get(new Random(seed).nextInt(((BiomeSourceAccess) this).getPossibleBiomes().size()));
         if (!centerBiomeLocation.isPresent()) {
             this.centerBiome = randBiome;
         } else {
             this.centerBiome = biomeRegistry.getOptional(centerBiomeLocation.get()).orElse(randBiome);
         }
-
+        this.centerBiomeLocation = Optional.of(biomeRegistry.getKey(centerBiome));
         SharedSeedRandom sharedseedrandom = new SharedSeedRandom(seed);
         sharedseedrandom.consumeCount(17292);
         this.islandNoise = new SimplexNoiseGenerator(sharedseedrandom);
