@@ -4,7 +4,7 @@ plugins {
 }
 
 registrationUtils {
-    group 'corgitaco.simplefloatingisland'
+    group 'corgitaco.simplefloatingislandsds'
     projects {
         Common { type 'common'; project ':Common' }
         Fabric { type 'fabric'; project ':Fabric' }
@@ -25,7 +25,6 @@ subprojects {
         compileOnly group:'com.google.auto.service', name:'auto-service', version:'1.0.1'
         annotationProcessor group:'com.google.auto.service', name:'auto-service', version:'1.0.1'
         compileOnly("com.google.code.findbugs:jsr305:3.0.2")
-
     }
         
     jar {

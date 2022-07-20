@@ -48,6 +48,9 @@ dependencies {
     implementation project(":Common")
 }
 
+reg.configureJarTask(shadowJar)
+
+
 loom {
     accessWidenerPath = project(":Common").file("src/main/resources/floatingislands.aw")
     runs {
