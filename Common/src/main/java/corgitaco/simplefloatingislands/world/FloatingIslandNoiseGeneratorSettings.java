@@ -1,6 +1,6 @@
 package corgitaco.simplefloatingislands.world;
 
-import corgitaco.simplefloatingisland.RegistrationProvider;
+import corgitaco.simplefloatingislands.RegistrationProvider;
 import corgitaco.simplefloatingislands.Constants;
 import corgitaco.simplefloatingislands.mixin.access.NoiseRouterDataAccess;
 import net.minecraft.data.BuiltinRegistries;

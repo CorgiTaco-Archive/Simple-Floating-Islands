@@ -2,7 +2,7 @@ package corgitaco.simplefloatingislands.world;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import corgitaco.simplefloatingisland.RegistrationProvider;
+import corgitaco.simplefloatingislands.RegistrationProvider;
 import corgitaco.simplefloatingislands.Constants;
 import it.unimi.dsi.fastutil.objects.Object2ObjectOpenHashMap;
 import net.minecraft.core.Holder;
