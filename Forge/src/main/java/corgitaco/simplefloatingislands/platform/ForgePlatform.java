@@ -1,10 +1,7 @@
 package corgitaco.simplefloatingislands.platform;
 
-import corgitaco.simplefloatingislands.network.ForgeNetworkHandler;
-import corgitaco.simplefloatingislands.network.Packet;
-import corgitaco.simplefloatingislands.platform.services.ModPlatform;
 import com.google.auto.service.AutoService;
-import net.minecraft.server.level.ServerPlayer;
+import corgitaco.simplefloatingislands.platform.services.ModPlatform;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.loading.FMLLoader;
 
@@ -24,15 +21,5 @@ public class ForgePlatform implements ModPlatform {
     @Override
     public boolean isDevelopmentEnvironment() {
         return !FMLLoader.isProduction();
-    }
-
-    @Override
-    public <P extends Packet> void sendToClient(ServerPlayer player, P packet) {
-        ForgeNetworkHandler.sendToPlayer(player, packet);
-    }
-
-    @Override
-    public <P extends Packet> void sendToServer(P packet) {
-        ForgeNetworkHandler.sendToServer(packet);
     }
 }

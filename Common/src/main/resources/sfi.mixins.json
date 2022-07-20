@@ -4,6 +4,7 @@
   "package": "corgitaco.simplefloatingislands.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "MixinWorldGenSettings",
     "access.NoiseRouterDataAccess",
     "access.NoiseSettingsAccess"
   ],

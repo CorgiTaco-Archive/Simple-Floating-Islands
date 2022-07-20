@@ -1,10 +1,5 @@
 package corgitaco.simplefloatingislands.platform.services;
 
-import corgitaco.simplefloatingislands.network.Packet;
-import net.minecraft.server.level.ServerPlayer;
-
-import java.util.List;
-
 public interface ModPlatform {
 
     /**
@@ -28,14 +23,4 @@ public interface ModPlatform {
      * @return True if in a development environment, false otherwise.
      */
     boolean isDevelopmentEnvironment();
-
-    <P extends Packet> void sendToClient(ServerPlayer player, P packet);
-
-    default <P extends Packet> void sendToAllClients(List<ServerPlayer> players, P packet) {
-        for (ServerPlayer player : players) {
-            sendToClient(player, packet);
-        }
-    }
-
-    <P extends Packet> void sendToServer(P packet);
 }

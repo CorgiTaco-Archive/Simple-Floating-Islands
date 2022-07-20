@@ -4,7 +4,7 @@ plugins {
 }
 
 registrationUtils {
-    group 'com.example.examplemod'
+    group 'corgitaco.simplefloatingisland'
     projects {
         Common { type 'common'; project ':Common' }
         Fabric { type 'fabric'; project ':Fabric' }

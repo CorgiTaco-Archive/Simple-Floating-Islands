@@ -2,29 +2,29 @@
   "schemaVersion": 1,
   "id": "multiloader",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Simple Floating Islands (SFI)",
+  "description": "Adds floating island world type",
   "authors": [
     "Corgi Taco"
   ],
   "contact": {
-    "homepage": "https://github.com/CorgiTaco/Corgis-MultiLoader-Template",
-    "sources": "https://github.com/CorgiTaco/Corgis-MultiLoader-Template"
+    "homepage": "https://github.com/CorgiTaco/Simple-Floating-Islands",
+    "sources": "https://github.com/CorgiTaco/Simple-Floating-Islands"
   },
-  "license": "CC0-1.0",
+  "license": "LGPLv3",
   "icon": "assets/modid/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "corgitaco.simplefloatingislands.ExampleModFabric"
+      "corgitaco.simplefloatingislands.SFIFabric"
     ],
     "client": [
       "corgitaco.simplefloatingislands.client.SFIFabricClient"
     ]
   },
   "mixins": [
-    "multiloader.mixins.json",
-    "multiloader.fabric.mixins.json"
+    "sfi.mixins.json",
+    "sfi.fabric.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.13",
